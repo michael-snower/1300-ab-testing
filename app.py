@@ -35,7 +35,7 @@ app.static_folder = 'static'
 def root():
     probability = random.uniform(0, 1)
     if probability < 0.5:
-        return render_template('A.html')
+        return render_template('B.html')
     else:
         return render_template('B.html')
 

@@ -43,6 +43,9 @@
 
     </script>
 
+    <script>
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +60,7 @@
 
   <body>
     <header>
-      <h1>Memphis Taxis Created by TODO: Add your team name here </h1> <!-- TODO: Add your team name here. -->
+      <h1>Memphis Taxis Created by Miracle Productions </h1> <!-- TODO: Add your team name here. -->
         <!-- Some of the ideas could be, making it pretty, making it look real, make it look reliable
             choosing attractive image etc, showing that your taxis are cheaper than X/Y..
             Show your juice of creativity.
@@ -66,34 +69,145 @@
              -->
         <!-- TODO: For those tech savvy users, feel free to beautify the site, using css. -->
          <!-- TODO: Feel free to update the content -->
-      <p>This page contains information about taxi and cab companies in Memphis, Tennessee.</p>
-      <p>Not endorsed by any of the companies listed, or the city of Memphis.</p>
+      <p>This page contains information about taxi and cab companies in Memphis, Tennessee. Not endorsed by any of the <br> companies listed, or the city of Memphis.</p>
     </header>
 
+    <script>
+      function handleTabClick(tab) {
+        let allTabContainers = document.getElementsByClassName('tab-container');
+        let allTabContainersArray = [];
+        let i;
+        for (i = 0; i<4; i++) {
+          allTabContainersArray.push(allTabContainers[i]);
+        }
+        let allTabs = document.getElementsByClassName('tab');
+        let allTabsArray = [];
+        for (i = 0; i<4; i++) {
+          allTabsArray.push(allTabs[i]);
+        }
+        for (let aTab of allTabsArray) {
+          if (aTab.classList.contains('highlight')) {
+            aTab.classList.remove('highlight');
+          }
+        }
+        if (tab.id === 'yellow-cab-tab') {
+          tab.classList.add('highlight');
+          for (let oneTab of allTabContainersArray) {
+            if (oneTab.id === 'yellow-cab-id') {
+              oneTab.classList.remove('hide');
+              tab.classList.add('highlight');
+            }
+            else {
+              oneTab.classList.add('hide');
+            }
+          }
+        }
+        if (tab.id === 'yellow-and-checker-tab') {
+          tab.classList.add('highlight');
+          for (let oneTab of allTabContainersArray) {
+            if (oneTab.id === 'yellow-and-checker-id') {
+              oneTab.classList.remove('hide');
+              tab.classList.add('highlight');
+            }
+            else {
+              oneTab.classList.add('hide');
+            }
+          }
+        }
+        if (tab.id === 'uber-tab') {
+          tab.classList.add('highlight');
+          for (let oneTab of allTabContainersArray) {
+            if (oneTab.id === 'uber-id') {
+              oneTab.classList.remove('hide');
+              tab.classList.add('highlight');
+            }
+            else {
+              oneTab.classList.add('hide');
+            }
+          }
+        }
+        if (tab.id === 'premier-tab') {
+          tab.classList.add('highlight');
+          for (let oneTab of allTabContainersArray) {
+            if (oneTab.id === 'premier-id') {
+              oneTab.classList.remove('hide');
+              tab.classList.add('highlight');
+            }
+            else {
+              oneTab.classList.add('hide');
+            }
+          }
+        }
+      }
+    </script>
+    <div class='tabs-container'>
+      <div id='yellow-cab-tab' class='tab highlight' onClick='handleTabClick(this);'>Yellow Cab Memphis</div>
+      <div id='yellow-and-checker-tab' class='tab' onClick='handleTabClick(this);'>Ridecharge</div>
+      <div id='uber-tab' class='tab' onClick='handleTabClick(this);'>Uber</div>
+      <div id='premier-tab' class='tab' onClick='handleTabClick(this);'>Premier Transportation Services</div>
+    </div>
+    <div class='content-container'>
+      <div id='yellow-cab-id' class='tab-container'>
+        <div class='image-container'> <img src="/static/yellowcabB.jpg" class="vendor-photo" /></div>
+        <div class='tab-content'>
+         <div>Safe, Reliable Taxi Services from Yellow Cab and Checker Cab are available
+                in the Memphis Metro area 24 hours a day.</div>
+          <button class="vendor-book-button" type="submit" id="mp1">Book Now!</button>
+        </div>
+      </div>
+      <div id='yellow-and-checker-id' class='tab-container hide'>
+        <div class='image-container'><img src="/static/ridechargeA.jpg" class="vendor-photo" /></div>
+        <div class='tab-content'>
+         <div>Our drivers are the most professional drivers in the industry. Our drivers
+                are licensed and required to successfully complete a formal training.</div>
+          <button class="vendor-book-button" type="submit" id="mp2">Book Now!</button>
+        </div>
+      </div>
+      <div id='uber-id' class='tab-container hide'>
+          <div class='image-container'> <img src="/static/uberB.jpeg" class="vendor-photo" /></div>
+       <div class='tab-content'>
+         <div> We are so much cheaper than taxis..! </div>
+         <button class="vendor-book-button" type="submit" id="mp3">Book Now!</button>
+        </div>
+      </div>
+      <div id='premier-id' class='tab-container hide'>
+        <div class='image-container'> <img src="/static/preimerMemphis.B.jpg" class="vendor-photo" /></div>
+        <div class='tab-content'>
+         <div>Our goal is to efficiently
+                transport our passengers in a safe, polite and timely manner at a fair
+                price.</div>
+          <button class="vendor-book-button" type="submit" id="mp4">Book Now!</button>
+        </div>
+      </div>
+    </div>
+    <!--
     <div class="vendor-wrapper">
-        <!--TODO: Change the image -->
       <img src="/static/memphis.png" class="vendor-photo" />
 
       <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">TODO: Change me</button>
        <p>Safe, Reliable Taxi Services from Yellow Cab and Checker Cab are available
               in the Memphis Metro area 24 hours a day.</p>
     </div>
+    !-->
 
+    <!--
     <div class="vendor-wrapper">
-        <!--TODO: Change the image -->
       <img src="/static/memphis2.png" class="vendor-photo" />
       <button class="vendor-book-button btn btn-primary" type="submit" id="mp2">TODO: Change me</button>
        <p>Our drivers are the most professional drivers in the industry. Our drivers
               are licensed and required to successfully complete a formal training.</p>
     </div>
+    !-->
 
+    <!--
      <div class="vendor-wrapper">
     <img src="/static/uber.png" class="vendor-photo" />
    
     <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">TODO: Change me</button>
      <p> We are so much cheaper than taxis..! </p>
     </div>
-
+    !-->
+    <!--
     <div class="vendor-wrapper">
       <img src="/static/premiere.png" class="vendor-photo" />
       <button class="vendor-book-button btn btn-primary" type="submit" id="mp4">TODO: Change me</button>
@@ -101,6 +215,7 @@
               transport our passengers in a safe, polite and timely manner at a fair
               price.</p>
     </div>
+    !-->
 
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
