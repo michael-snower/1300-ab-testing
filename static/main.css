@@ -79,10 +79,9 @@ header {
 ********************/
 
 .tabs-container {
-	width: 100%;
+	width: 1100px;
 	height: 20px;
-	display: inline-block;
-	margin-left: 40px;
+	margin: 0px auto;
 }
 
 .tab {
