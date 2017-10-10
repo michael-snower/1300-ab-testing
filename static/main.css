@@ -19,6 +19,7 @@ header {
 }
 
 .vendor-book-button {
+	font-size: 2em;
 	margin-top: 10px;
 	font-size: 16px;
 	background-color: green;
@@ -26,7 +27,54 @@ header {
 	border-radius: 4px;
 }
 
-/******************** 
+/* A */
+.header-A {
+	text-align: center;
+}
+
+.header-A p {
+	font-size: 1.2em;
+}
+
+.header-A h1 {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.vendor-table {
+	padding-top: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 100%;
+}
+
+.vendor-text {
+	padding-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 40px;
+	width: 100%;
+	min-height: 150px;
+}
+
+.vendor-wrapper-A {
+	padding-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 24%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.vendor-photo-A {
+	width: 200px;
+	height: 200px;
+}
+
+
+/********************
 	Michael CSS
 ********************/
 
@@ -81,6 +129,3 @@ header {
 	display: inline-block;
 	width: 300px;
 }
-
-
-
