@@ -1,6 +1,8 @@
 header {
+	margin-bottom: 40px;
 	padding-left: 40px;
 	padding-top: 20px;
+	text-align: center;
 }
 /* Feel free to modify anything in this file.*/
 .vendor-wrapper {
@@ -18,6 +20,11 @@ header {
 
 .vendor-book-button {
 	font-size: 2em;
+	margin-top: 10px;
+	font-size: 16px;
+	background-color: green;
+	border: 1px solid green;
+	border-radius: 4px;
 }
 
 /* A */
@@ -64,4 +71,56 @@ header {
 .vendor-photo-A {
 	width: 200px;
 	height: 200px;
+}
+
+
+/********************
+	Michael CSS
+********************/
+
+.tabs-container {
+	width: 100%;
+	height: 20px;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.tab {
+	display: inline-block;
+	width: 250px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 20px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.highlight {
+	color: green;
+	border-bottom: 1px solid green;
+}
+
+.hide {
+	display: none;
+}
+
+.content-container {
+	width: 100%;
+	margin-top: 60px;
+	margin-left: 30px;
+}
+
+.tab-container {
+	width: 800px;
+	margin: 0px auto;
+}
+
+.image-container {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+}
+.tab-content {
+	display: inline-block;
+	width: 300px;
 }
